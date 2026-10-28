@@ -1,0 +1,2048 @@
+/* Preserved artifact hero/review styles, scoped to prevent landing overrides. */
+:is(.artifact-hero, .review-bar, .concept-dialog) *,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(*) {
+  box-sizing: border-box;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) [hidden],
+:is(.artifact-hero, .review-bar, .concept-dialog)[hidden] {
+  display: none !important;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) button,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(button),
+:is(.artifact-hero, .review-bar, .concept-dialog) input,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(input),
+:is(.artifact-hero, .review-bar, .concept-dialog) select,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(select),
+:is(.artifact-hero, .review-bar, .concept-dialog) textarea,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(textarea) {
+  font: inherit;
+  color: inherit;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) button,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(button),
+:is(.artifact-hero, .review-bar, .concept-dialog) a,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(a),
+:is(.artifact-hero, .review-bar, .concept-dialog) select,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(select),
+:is(.artifact-hero, .review-bar, .concept-dialog) summary,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(summary) {
+  touch-action: manipulation;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) button,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(button) {
+  cursor: pointer;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) button:disabled,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(button):disabled {
+  cursor: default;
+  color: var(--muted);
+  background: #edeaf1;
+  box-shadow: none;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) button:focus-visible,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(button):focus-visible,
+:is(.artifact-hero, .review-bar, .concept-dialog) a:focus-visible,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(a):focus-visible,
+:is(.artifact-hero, .review-bar, .concept-dialog) select:focus-visible,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(select):focus-visible,
+:is(.artifact-hero, .review-bar, .concept-dialog) input:focus-visible,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(input):focus-visible,
+:is(.artifact-hero, .review-bar, .concept-dialog) textarea:focus-visible,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(textarea):focus-visible,
+:is(.artifact-hero, .review-bar, .concept-dialog) summary:focus-visible,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(summary):focus-visible {
+  outline: 3px solid var(--violet-deep);
+  outline-offset: 4px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) a,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(a) {
+  color: var(--violet-deep);
+  text-underline-offset: 4px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) svg,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(svg) {
+  width: 22px;
+  height: 22px;
+  flex: none;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) img,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(img) {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) h1,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(h1),
+:is(.artifact-hero, .review-bar, .concept-dialog) h2,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(h2),
+:is(.artifact-hero, .review-bar, .concept-dialog) h3,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(h3),
+:is(.artifact-hero, .review-bar, .concept-dialog) p,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(p),
+:is(.artifact-hero, .review-bar, .concept-dialog) figure,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(figure) {
+  margin: 0;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) h1,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(h1),
+:is(.artifact-hero, .review-bar, .concept-dialog) h2,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(h2),
+:is(.artifact-hero, .review-bar, .concept-dialog) h3,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(h3) {
+  font-family: var(--marker);
+  font-weight: 800;
+  line-height: 1.14;
+  text-wrap: pretty;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) h1,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(h1) {
+  font-size: clamp(2.05rem, 3.35vw, 3rem);
+  letter-spacing: -0.045em;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) h2,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(h2) {
+  font-size: clamp(1.9rem, 3.15vw, 2.85rem);
+  letter-spacing: -0.035em;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) h3,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(h3) {
+  font-size: 1.2rem;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) p,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(p) {
+  overflow-wrap: break-word;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .wrap,
+:is(.artifact-hero, .review-bar, .concept-dialog).wrap {
+  width: min(100%, 1280px);
+  padding-inline: clamp(20px, 4vw, 48px);
+  margin-inline: auto;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .tiny,
+:is(.artifact-hero, .review-bar, .concept-dialog).tiny {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .sr-only,
+:is(.artifact-hero, .review-bar, .concept-dialog).sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .btn,
+:is(.artifact-hero, .review-bar, .concept-dialog).btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border: 2px solid var(--ink);
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 650;
+  line-height: 1.4;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  min-height: 46px;
+  transition:
+    background 0.1s,
+    transform 0.1s;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .btn.primary,
+:is(.artifact-hero, .review-bar, .concept-dialog).btn.primary {
+  background: var(--violet);
+  color: #fff;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .btn:hover,
+:is(.artifact-hero, .review-bar, .concept-dialog).btn:hover {
+  transform: translate(-1px, -1px);
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .btn.primary:hover,
+:is(.artifact-hero, .review-bar, .concept-dialog).btn.primary:hover {
+  background: var(--violet-deep);
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .text-button,
+:is(.artifact-hero, .review-bar, .concept-dialog).text-button {
+  border: 0;
+  background: transparent;
+  padding: 8px 2px;
+  font-weight: 550;
+  color: var(--violet-deep);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .card,
+:is(.artifact-hero, .review-bar, .concept-dialog).card {
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  min-width: 0;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .eyebrow,
+:is(.artifact-hero, .review-bar, .concept-dialog).eyebrow {
+  color: var(--violet-deep);
+  font-size: 11px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  font-weight: 650;
+  margin-bottom: 15px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .lead,
+:is(.artifact-hero, .review-bar, .concept-dialog).lead {
+  font-size: 18px;
+  line-height: 1.55;
+  max-width: 620px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .accent,
+:is(.artifact-hero, .review-bar, .concept-dialog).accent {
+  position: relative;
+  display: inline-block;
+  color: var(--violet);
+  white-space: nowrap;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .accent > svg,
+:is(.artifact-hero, .review-bar, .concept-dialog).accent > svg {
+  position: absolute;
+  left: 0;
+  bottom: -0.08em;
+  width: 100%;
+  height: 0.32em;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .dotted,
+:is(.artifact-hero, .review-bar, .concept-dialog).dotted {
+  position: relative;
+  background-color: var(--warm);
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .dotted:before,
+:is(.artifact-hero, .review-bar, .concept-dialog).dotted:before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background-image: radial-gradient(circle, #e4e0d8 1.2px, transparent 1.2px);
+  background-size: 26px 26px;
+  mask-image: radial-gradient(
+    ellipse 95% 80% at 20% 0%,
+    #000 20%,
+    transparent 83%
+  );
+  pointer-events: none;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .dotted > .wrap,
+:is(.artifact-hero, .review-bar, .concept-dialog).dotted > .wrap {
+  position: relative;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .round-icon,
+:is(.artifact-hero, .review-bar, .concept-dialog).round-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: var(--violet-tint);
+  border: 2px solid var(--ink);
+  border-radius: 14px;
+}
+/* Artifact chrome stays visibly outside the warm Sketchie landing. */
+:is(.artifact-hero, .review-bar, .concept-dialog) .review-bar,
+:is(.artifact-hero, .review-bar, .concept-dialog).review-bar {
+  background: #eeeaf8;
+  border-bottom: 3px solid var(--ink);
+  font-size: 12px;
+  line-height: 1.45;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .review-wrap,
+:is(.artifact-hero, .review-bar, .concept-dialog).review-wrap {
+  max-width: 1440px;
+  margin: auto;
+  padding: 16px 32px 12px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .review-top,
+:is(.artifact-hero, .review-bar, .concept-dialog).review-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 12px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .review-kicker,
+:is(.artifact-hero, .review-bar, .concept-dialog).review-kicker {
+  font-size: 9px;
+  font-weight: 750;
+  letter-spacing: 0.13em;
+  color: #5a4b8a;
+  margin-bottom: 3px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) #review-title,
+:is(.artifact-hero, .review-bar, .concept-dialog)#review-title {
+  font-size: 17px;
+  font-weight: 700;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .review-safety,
+:is(.artifact-hero, .review-bar, .concept-dialog).review-safety {
+  font-size: 11px;
+  color: #5b536b;
+  text-align: right;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .review-row,
+:is(.artifact-hero, .review-bar, .concept-dialog).review-row {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .review-tabs,
+:is(.artifact-hero, .review-bar, .concept-dialog).review-tabs {
+  display: flex;
+  gap: 6px;
+  flex: 1;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .review-tabs button,
+:is(.artifact-hero, .review-bar, .concept-dialog).review-tabs button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 40px;
+  padding: 8px 12px;
+  border: 1px solid #c4bdd6;
+  border-radius: 7px;
+  background: #faf8ff;
+  font-size: 12px;
+  line-height: 1.2;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .review-tabs b,
+:is(.artifact-hero, .review-bar, .concept-dialog).review-tabs b {
+  font-size: 13px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog)
+  .review-tabs
+  button[aria-selected="true"],
+:is(.artifact-hero, .review-bar, .concept-dialog).review-tabs
+  button[aria-selected="true"] {
+  background: var(--ink);
+  color: #fff;
+  border-color: var(--ink);
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .review-states,
+:is(.artifact-hero, .review-bar, .concept-dialog).review-states {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .review-states > span,
+:is(.artifact-hero, .review-bar, .concept-dialog).review-states > span {
+  margin-right: 3px;
+  font-size: 10px;
+  color: #5b536b;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .review-states button,
+:is(.artifact-hero, .review-bar, .concept-dialog).review-states button {
+  padding: 8px;
+  min-height: 36px;
+  background: transparent;
+  border: 1px solid #bfb6d5;
+  border-radius: 6px;
+  font-size: 11px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog)
+  .review-states
+  button[aria-pressed="true"],
+:is(.artifact-hero, .review-bar, .concept-dialog).review-states
+  button[aria-pressed="true"] {
+  background: white;
+  border-color: #75678e;
+  box-shadow: 0 1px 0 #75678e;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .review-summary,
+:is(.artifact-hero, .review-bar, .concept-dialog).review-summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  margin: 12px 0 0;
+  padding-top: 10px;
+  border-top: 1px solid #d2cadf;
+  font-size: 11px;
+  color: #51485e;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .review-summary > div,
+:is(.artifact-hero, .review-bar, .concept-dialog).review-summary > div {
+  display: flex;
+  gap: 7px;
+  min-width: 0;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .review-summary dt,
+:is(.artifact-hero, .review-bar, .concept-dialog).review-summary dt {
+  font-weight: 750;
+  color: #352b46;
+  flex: none;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .review-summary dd,
+:is(.artifact-hero, .review-bar, .concept-dialog).review-summary dd {
+  margin: 0;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .review-state-note,
+:is(.artifact-hero, .review-bar, .concept-dialog).review-state-note {
+  margin-top: 7px;
+  font-size: 10px;
+  color: #685f76;
+}
+/* Shared marketing shell. */
+:is(.artifact-hero, .review-bar, .concept-dialog) .hero,
+:is(.artifact-hero, .review-bar, .concept-dialog).hero {
+  padding-block: 64px 28px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .hero-panel,
+:is(.artifact-hero, .review-bar, .concept-dialog).hero-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.35fr);
+  gap: 54px;
+  align-items: center;
+  min-height: 395px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .hero-copy .lead,
+:is(.artifact-hero, .review-bar, .concept-dialog).hero-copy .lead {
+  margin-top: 24px;
+  max-width: 43ch;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .hero-copy .eyebrow,
+:is(.artifact-hero, .review-bar, .concept-dialog).hero-copy .eyebrow {
+  margin-bottom: 17px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .quiet-link,
+:is(.artifact-hero, .review-bar, .concept-dialog).quiet-link {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 26px;
+  text-decoration: none;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .hero-work,
+:is(.artifact-hero, .review-bar, .concept-dialog).hero-work {
+  min-width: 0;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .annotation,
+:is(.artifact-hero, .review-bar, .concept-dialog).annotation {
+  font-family: var(--annotation);
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--violet-deep);
+  margin: 0 0 16px 18px;
+  transform: rotate(-3deg);
+  display: inline-block;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .under-composer,
+:is(.artifact-hero, .review-bar, .concept-dialog).under-composer {
+  font-size: 12px;
+  text-align: center;
+  color: var(--muted);
+  margin-top: 16px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .composer,
+:is(.artifact-hero, .review-bar, .concept-dialog).composer {
+  overflow: visible;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .composer-label,
+:is(.artifact-hero, .review-bar, .concept-dialog).composer-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 18px 0;
+  font-family: var(--marker);
+  font-weight: 650;
+  font-size: 16px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .composer-label .tiny,
+:is(.artifact-hero, .review-bar, .concept-dialog).composer-label .tiny {
+  font-family: var(--ui);
+  font-weight: 450;
+  font-size: 10px;
+  color: var(--muted);
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .inputrow,
+:is(.artifact-hero, .review-bar, .concept-dialog).inputrow {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+  padding: 10px 16px 16px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .inputrow textarea,
+:is(.artifact-hero, .review-bar, .concept-dialog).inputrow textarea {
+  flex: 1;
+  resize: vertical;
+  padding: 8px 3px;
+  border: 0;
+  background: transparent;
+  min-width: 0;
+  width: 100%;
+  min-height: 104px;
+  max-height: 230px;
+  font-size: 17px;
+  line-height: 1.55;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog)
+  .inputrow
+  textarea::placeholder,
+:is(.artifact-hero, .review-bar, .concept-dialog).inputrow
+  textarea::placeholder {
+  color: #757580;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .inputrow textarea:focus,
+:is(.artifact-hero, .review-bar, .concept-dialog).inputrow textarea:focus {
+  outline: none;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog)
+  .inputrow
+  textarea:focus-visible,
+:is(.artifact-hero, .review-bar, .concept-dialog).inputrow
+  textarea:focus-visible {
+  outline: 2px solid var(--violet);
+  outline-offset: 2px;
+  border-radius: 5px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .send,
+:is(.artifact-hero, .review-bar, .concept-dialog).send {
+  font-family: var(--marker);
+  font-size: 16px;
+  padding: 11px 16px;
+  white-space: nowrap;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .send svg,
+:is(.artifact-hero, .review-bar, .concept-dialog).send svg {
+  width: 18px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .pills,
+:is(.artifact-hero, .review-bar, .concept-dialog).pills {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 12px 14px 14px;
+  border-top: 1.6px dashed #dedade;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .pill,
+:is(.artifact-hero, .review-bar, .concept-dialog).pill,
+:is(.artifact-hero, .review-bar, .concept-dialog) .select-pill select,
+:is(.artifact-hero, .review-bar, .concept-dialog).select-pill select,
+:is(.artifact-hero, .review-bar, .concept-dialog) .length-control,
+:is(.artifact-hero, .review-bar, .concept-dialog).length-control {
+  background: var(--paper);
+  border: 1.5px solid #dad6d0;
+  border-radius: 9px;
+  font-size: 11px;
+  line-height: 1.4;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .pill,
+:is(.artifact-hero, .review-bar, .concept-dialog).pill {
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+  padding: 7px 9px;
+  min-height: 36px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .pill svg,
+:is(.artifact-hero, .review-bar, .concept-dialog).pill svg {
+  width: 15px;
+  height: 15px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .pill:hover,
+:is(.artifact-hero, .review-bar, .concept-dialog).pill:hover,
+:is(.artifact-hero, .review-bar, .concept-dialog) .select-pill select:hover,
+:is(.artifact-hero, .review-bar, .concept-dialog).select-pill select:hover {
+  border-color: var(--violet);
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .select-pill,
+:is(.artifact-hero, .review-bar, .concept-dialog).select-pill {
+  min-width: 0;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .select-pill select,
+:is(.artifact-hero, .review-bar, .concept-dialog).select-pill select {
+  max-width: 145px;
+  padding: 8px 4px 8px 9px;
+  min-height: 36px;
+  cursor: pointer;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .length-control,
+:is(.artifact-hero, .review-bar, .concept-dialog).length-control {
+  margin: 0;
+  padding: 2px;
+  display: inline-flex;
+  gap: 2px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .length-control button,
+:is(.artifact-hero, .review-bar, .concept-dialog).length-control button {
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  padding: 6px 8px;
+  font-size: 11px;
+  min-height: 30px;
+  white-space: nowrap;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog)
+  .length-control
+  button[aria-pressed="true"],
+:is(.artifact-hero, .review-bar, .concept-dialog).length-control
+  button[aria-pressed="true"] {
+  background: var(--violet-tint);
+  color: var(--violet-deep);
+  font-weight: 700;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .source-chip,
+:is(.artifact-hero, .review-bar, .concept-dialog).source-chip {
+  margin: 0 16px 14px;
+  padding: 7px 10px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--violet-tint);
+  border: 1px solid #d5cdef;
+  border-radius: 9px;
+  font-size: 12px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .source-chip > svg,
+:is(.artifact-hero, .review-bar, .concept-dialog).source-chip > svg {
+  width: 18px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .source-chip span,
+:is(.artifact-hero, .review-bar, .concept-dialog).source-chip span {
+  flex: 1;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .source-chip small,
+:is(.artifact-hero, .review-bar, .concept-dialog).source-chip small {
+  font-size: 10px;
+  display: block;
+  color: var(--muted);
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .source-chip button,
+:is(.artifact-hero, .review-bar, .concept-dialog).source-chip button {
+  border: 0;
+  background: transparent;
+  min-height: 32px;
+  min-width: 32px;
+  font-size: 20px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .error,
+:is(.artifact-hero, .review-bar, .concept-dialog).error {
+  color: #aa2b24;
+  font-size: 12px;
+  margin: 0 18px 12px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .count,
+:is(.artifact-hero, .review-bar, .concept-dialog).count {
+  font-size: 11px;
+  margin: 0 18px 12px;
+  color: var(--muted);
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .guided-fields,
+:is(.artifact-hero, .review-bar, .concept-dialog).guided-fields {
+  display: grid;
+  gap: 12px;
+  padding: 0 18px 16px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .guided-fields label,
+:is(.artifact-hero, .review-bar, .concept-dialog).guided-fields label {
+  display: grid;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 650;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .guided-fields select,
+:is(.artifact-hero, .review-bar, .concept-dialog).guided-fields select,
+:is(.artifact-hero, .review-bar, .concept-dialog) .guided-fields input,
+:is(.artifact-hero, .review-bar, .concept-dialog).guided-fields input {
+  background: var(--warm);
+  border: 1px solid #d6d1c9;
+  border-radius: 8px;
+  padding: 9px;
+  font-size: 12px;
+  min-width: 0;
+  width: 100%;
+  min-height: 38px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .process,
+:is(.artifact-hero, .review-bar, .concept-dialog).process {
+  overflow: hidden;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .job-head,
+:is(.artifact-hero, .review-bar, .concept-dialog).job-head {
+  background: var(--warm);
+  border-bottom: 2px solid var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 16px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .job-head h2,
+:is(.artifact-hero, .review-bar, .concept-dialog).job-head h2 {
+  font-family: var(--ui);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 1.4;
+  font-weight: 650;
+  flex: 1;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .job-head .tiny,
+:is(.artifact-hero, .review-bar, .concept-dialog).job-head .tiny {
+  font-size: 10px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .status-dot,
+:is(.artifact-hero, .review-bar, .concept-dialog).status-dot {
+  width: 11px;
+  height: 11px;
+  flex: none;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  background: #ff922b;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .job-body,
+:is(.artifact-hero, .review-bar, .concept-dialog).job-body {
+  padding: 16px 20px 20px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .prompt-receipt,
+:is(.artifact-hero, .review-bar, .concept-dialog).prompt-receipt {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .job-settings,
+:is(.artifact-hero, .review-bar, .concept-dialog).job-settings {
+  font-size: 11px;
+  color: var(--muted);
+  margin: 6px 0 18px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .gen-steps,
+:is(.artifact-hero, .review-bar, .concept-dialog).gen-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 2px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .gen-steps li,
+:is(.artifact-hero, .review-bar, .concept-dialog).gen-steps li {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .ck,
+:is(.artifact-hero, .review-bar, .concept-dialog).ck {
+  width: 19px;
+  height: 19px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px dashed #b5b0b5;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 700;
+  flex: none;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog)
+  .gen-steps
+  li[data-state="wait"],
+:is(.artifact-hero, .review-bar, .concept-dialog).gen-steps
+  li[data-state="wait"] {
+  color: #72717b;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog)
+  .gen-steps
+  li[data-state="done"]
+  .ck,
+:is(.artifact-hero, .review-bar, .concept-dialog).gen-steps
+  li[data-state="done"]
+  .ck {
+  background: var(--leaf);
+  border: 1.5px solid var(--ink);
+  color: var(--ink);
+}
+:is(.artifact-hero, .review-bar, .concept-dialog)
+  .gen-steps
+  li[data-state="now"],
+:is(.artifact-hero, .review-bar, .concept-dialog).gen-steps
+  li[data-state="now"] {
+  font-weight: 650;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog)
+  .gen-steps
+  li[data-state="now"]
+  .ck,
+:is(.artifact-hero, .review-bar, .concept-dialog).gen-steps
+  li[data-state="now"]
+  .ck {
+  border: 0;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog)
+  .gen-steps
+  li[data-state="now"]
+  .ck:after,
+:is(.artifact-hero, .review-bar, .concept-dialog).gen-steps
+  li[data-state="now"]
+  .ck:after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--violet);
+  box-shadow: 0 0 0 5px #6c5ce71c;
+  animation: pulse 1.5s infinite;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .simulation-note,
+:is(.artifact-hero, .review-bar, .concept-dialog).simulation-note {
+  margin-top: 17px;
+  font-size: 10px;
+  color: var(--muted);
+}
+@keyframes pulse {
+  50% {
+    box-shadow: 0 0 0 8px #6c5ce705;
+  }
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .locked,
+:is(.artifact-hero, .review-bar, .concept-dialog).locked {
+  overflow: hidden;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .locked-board,
+:is(.artifact-hero, .review-bar, .concept-dialog).locked-board {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 190px;
+  background: var(--warm);
+  border-bottom: 2px solid var(--ink);
+  padding: 24px;
+  gap: 5px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .board-doodles,
+:is(.artifact-hero, .review-bar, .concept-dialog).board-doodles {
+  position: absolute;
+  inset: 30px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  opacity: 0.12;
+  font: 700 27px var(--marker);
+  transform: rotate(-4deg);
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .board-doodles span,
+:is(.artifact-hero, .review-bar, .concept-dialog).board-doodles span {
+  border: 2px solid var(--ink);
+  border-radius: 15px;
+  padding: 12px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .board-doodles i,
+:is(.artifact-hero, .review-bar, .concept-dialog).board-doodles i {
+  font-size: 40px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .lock-badge,
+:is(.artifact-hero, .review-bar, .concept-dialog).lock-badge {
+  position: relative;
+  display: grid;
+  place-items: center;
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  box-shadow: 2px 3px 0 var(--ink);
+  border-radius: 15px;
+  width: 54px;
+  height: 54px;
+  color: var(--violet);
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .lock-badge svg,
+:is(.artifact-hero, .review-bar, .concept-dialog).lock-badge svg {
+  width: 28px;
+  height: 28px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .brand-small,
+:is(.artifact-hero, .review-bar, .concept-dialog).brand-small {
+  font: 750 22px var(--marker);
+  position: relative;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .locked-board > .tiny,
+:is(.artifact-hero, .review-bar, .concept-dialog).locked-board > .tiny {
+  position: relative;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .locked-body,
+:is(.artifact-hero, .review-bar, .concept-dialog).locked-body {
+  padding: 22px 22px 18px;
+  text-align: center;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .locked-body h2,
+:is(.artifact-hero, .review-bar, .concept-dialog).locked-body h2 {
+  font-size: 22px;
+  letter-spacing: -0.02em;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog)
+  .locked-body
+  > p:not(.login-line):not(.account-note):not(.account-feedback),
+:is(.artifact-hero, .review-bar, .concept-dialog).locked-body
+  > p:not(.login-line):not(.account-note):not(.account-feedback) {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 8px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .locked-body > .btn,
+:is(.artifact-hero, .review-bar, .concept-dialog).locked-body > .btn {
+  width: 100%;
+  margin-top: 16px;
+  font-size: 14px;
+  padding: 11px 10px;
+  min-height: 44px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .login-line,
+:is(.artifact-hero, .review-bar, .concept-dialog).login-line {
+  font-size: 11px;
+  margin-top: 9px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .login-line .text-button,
+:is(.artifact-hero, .review-bar, .concept-dialog).login-line .text-button {
+  font-size: 11px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .account-note,
+:is(.artifact-hero, .review-bar, .concept-dialog).account-note {
+  font-size: 10px;
+  line-height: 1.5;
+  color: var(--muted);
+  margin-top: 6px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .account-feedback,
+:is(.artifact-hero, .review-bar, .concept-dialog).account-feedback {
+  font-size: 11px;
+  color: var(--violet-deep);
+  margin-top: 10px;
+}
+/* Four product directions; shared material, different starting mechanics. */
+:is(.artifact-hero, .review-bar, .concept-dialog) .option-b,
+:is(.artifact-hero, .review-bar, .concept-dialog).option-b {
+  display: block;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .hero-intro,
+:is(.artifact-hero, .review-bar, .concept-dialog).hero-intro {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 30px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .hero-intro h1 br,
+:is(.artifact-hero, .review-bar, .concept-dialog).hero-intro h1 br {
+  display: none;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .hero-intro h1,
+:is(.artifact-hero, .review-bar, .concept-dialog).hero-intro h1 {
+  font-size: clamp(2.05rem, 3.1vw, 2.8rem);
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .hero-intro .lead,
+:is(.artifact-hero, .review-bar, .concept-dialog).hero-intro .lead {
+  margin: 18px auto 0;
+  max-width: 670px;
+  font-size: 16px;
+}
+@media (min-width: 651px) {
+  :is(.artifact-hero, .review-bar, .concept-dialog) .option-b .hero-intro .eyebrow,
+  :is(.artifact-hero, .review-bar, .concept-dialog).option-b .hero-intro .eyebrow {
+    margin-inline: auto;
+  }
+}
+
+:is(.artifact-hero, .review-bar, .concept-dialog) .split-studio,
+:is(.artifact-hero, .review-bar, .concept-dialog).split-studio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .split-studio .inputrow,
+:is(.artifact-hero, .review-bar, .concept-dialog).split-studio .inputrow {
+  display: block;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog)
+  .split-studio
+  .inputrow
+  textarea,
+:is(.artifact-hero, .review-bar, .concept-dialog).split-studio
+  .inputrow
+  textarea {
+  height: 102px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .split-studio .send,
+:is(.artifact-hero, .review-bar, .concept-dialog).split-studio .send {
+  float: right;
+  margin: 4px 0 4px 12px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .split-studio .inputrow:after,
+:is(.artifact-hero, .review-bar, .concept-dialog).split-studio .inputrow:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .preview-example,
+:is(.artifact-hero, .review-bar, .concept-dialog).preview-example {
+  overflow: hidden;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .example-top,
+:is(.artifact-hero, .review-bar, .concept-dialog).example-top,
+:is(.artifact-hero, .review-bar, .concept-dialog) .example-caption,
+:is(.artifact-hero, .review-bar, .concept-dialog).example-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .example-top,
+:is(.artifact-hero, .review-bar, .concept-dialog).example-top {
+  border-bottom: 1px solid var(--line);
+  background: var(--warm);
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .example-dot,
+:is(.artifact-hero, .review-bar, .concept-dialog).example-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--leaf);
+  border: 1px solid var(--ink);
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .preview-example > img,
+:is(.artifact-hero, .review-bar, .concept-dialog).preview-example > img {
+  width: 100%;
+  aspect-ratio: 16/7.5;
+  object-fit: contain;
+  background: white;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .example-caption,
+:is(.artifact-hero, .review-bar, .concept-dialog).example-caption {
+  border-top: 1px solid var(--line);
+  font-family: var(--marker);
+  font-weight: 650;
+  font-size: 14px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .example-caption > .tiny,
+:is(.artifact-hero, .review-bar, .concept-dialog).example-caption > .tiny {
+  font-family: var(--ui);
+  font-weight: 400;
+  font-size: 10px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .brief-column,
+:is(.artifact-hero, .review-bar, .concept-dialog).brief-column {
+  min-width: 0;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .output-column,
+:is(.artifact-hero, .review-bar, .concept-dialog).output-column {
+  min-width: 0;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog)
+  .brief-column
+  form[data-readonly="true"]
+  .composer-label:after,
+:is(.artifact-hero, .review-bar, .concept-dialog).brief-column
+  form[data-readonly="true"]
+  .composer-label:after {
+  content: "Brief retained";
+  font: 500 10px var(--ui);
+  color: var(--violet-deep);
+  margin-left: 10px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog)
+  .brief-column
+  form[data-readonly="true"]
+  .composer-label
+  > .tiny,
+:is(.artifact-hero, .review-bar, .concept-dialog).brief-column
+  form[data-readonly="true"]
+  .composer-label
+  > .tiny {
+  display: none;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .option-c,
+:is(.artifact-hero, .review-bar, .concept-dialog).option-c {
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.2fr);
+  gap: 64px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .guide-path,
+:is(.artifact-hero, .review-bar, .concept-dialog).guide-path {
+  display: grid;
+  gap: 12px;
+  margin-top: 30px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .path-step,
+:is(.artifact-hero, .review-bar, .concept-dialog).path-step {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 13px;
+  color: var(--muted);
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .path-step b,
+:is(.artifact-hero, .review-bar, .concept-dialog).path-step b {
+  display: grid;
+  place-items: center;
+  border: 1.5px solid var(--ink);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background: var(--paper);
+  font: 650 12px var(--marker);
+  color: var(--ink);
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .topic-examples,
+:is(.artifact-hero, .review-bar, .concept-dialog).topic-examples {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin: 0 0 16px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .topic-examples > span,
+:is(.artifact-hero, .review-bar, .concept-dialog).topic-examples > span {
+  display: block;
+  flex-basis: 100%;
+  font-size: 11px;
+  font-weight: 650;
+  color: var(--muted);
+  margin-bottom: 3px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .topic-examples button,
+:is(.artifact-hero, .review-bar, .concept-dialog).topic-examples button {
+  font-size: 10px;
+  background: var(--warm);
+  padding: 6px 8px;
+  border: 1px solid #c9c0b7;
+  border-radius: 99px;
+  min-height: 30px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .topic-examples button:hover,
+:is(.artifact-hero, .review-bar, .concept-dialog).topic-examples button:hover {
+  border-color: var(--violet);
+  color: var(--violet-deep);
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .option-c .inputrow,
+:is(.artifact-hero, .review-bar, .concept-dialog).option-c .inputrow {
+  display: block;
+  padding-bottom: 12px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .option-c .inputrow textarea,
+:is(.artifact-hero, .review-bar, .concept-dialog).option-c .inputrow textarea {
+  min-height: 74px;
+  height: 74px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .option-c .send,
+:is(.artifact-hero, .review-bar, .concept-dialog).option-c .send {
+  width: 100%;
+  margin-top: 8px;
+  font-family: var(--ui);
+  font-size: 14px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .option-c .pills,
+:is(.artifact-hero, .review-bar, .concept-dialog).option-c .pills {
+  gap: 5px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .option-d,
+:is(.artifact-hero, .review-bar, .concept-dialog).option-d {
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 52px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .option-d h1,
+:is(.artifact-hero, .review-bar, .concept-dialog).option-d h1 {
+  font-size: clamp(2.05rem, 3.15vw, 2.85rem);
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .option-d .lead,
+:is(.artifact-hero, .review-bar, .concept-dialog).option-d .lead {
+  font-size: 16px;
+  max-width: 44ch;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .example-prompt-label,
+:is(.artifact-hero, .review-bar, .concept-dialog).example-prompt-label {
+  margin-top: 26px;
+  font-size: 11px;
+  font-weight: 650;
+  color: var(--muted);
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .example-choices,
+:is(.artifact-hero, .review-bar, .concept-dialog).example-choices {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .example-choices button,
+:is(.artifact-hero, .review-bar, .concept-dialog).example-choices button {
+  display: block;
+  min-width: 0;
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-radius: 10px;
+  padding: 0;
+  box-shadow: 2px 3px 0 var(--ink);
+  overflow: hidden;
+  text-align: left;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .example-choices img,
+:is(.artifact-hero, .review-bar, .concept-dialog).example-choices img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  object-position: center;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog)
+  .example-choices
+  button
+  > span,
+:is(.artifact-hero, .review-bar, .concept-dialog).example-choices
+  button
+  > span {
+  display: flex;
+  justify-content: space-between;
+  gap: 3px;
+  align-items: center;
+  padding: 8px;
+  font-size: 9px;
+  font-weight: 650;
+  border-top: 1px solid var(--line);
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .example-choices svg,
+:is(.artifact-hero, .review-bar, .concept-dialog).example-choices svg {
+  width: 13px;
+  height: 13px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog)
+  .example-choices
+  button[aria-pressed="true"],
+:is(.artifact-hero, .review-bar, .concept-dialog).example-choices
+  button[aria-pressed="true"] {
+  border-color: var(--violet);
+  box-shadow: 2px 3px 0 var(--violet);
+  background: var(--violet-tint);
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .remix-heading,
+:is(.artifact-hero, .review-bar, .concept-dialog).remix-heading {
+  margin-bottom: 14px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .remix-heading .annotation,
+:is(.artifact-hero, .review-bar, .concept-dialog).remix-heading .annotation {
+  margin-bottom: 7px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .remix-heading > p,
+:is(.artifact-hero, .review-bar, .concept-dialog).remix-heading > p {
+  font: 700 17px var(--marker);
+  margin-left: 18px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .option-d .inputrow,
+:is(.artifact-hero, .review-bar, .concept-dialog).option-d .inputrow {
+  display: block;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .option-d .inputrow textarea,
+:is(.artifact-hero, .review-bar, .concept-dialog).option-d .inputrow textarea {
+  height: 90px;
+  min-height: 90px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .option-d .send,
+:is(.artifact-hero, .review-bar, .concept-dialog).option-d .send {
+  width: 100%;
+  margin-top: 8px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .option-d .pills,
+:is(.artifact-hero, .review-bar, .concept-dialog).option-d .pills {
+  gap: 5px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .option-d .pill,
+:is(.artifact-hero, .review-bar, .concept-dialog).option-d .pill,
+:is(.artifact-hero, .review-bar, .concept-dialog) .option-d .select-pill select,
+:is(.artifact-hero, .review-bar, .concept-dialog).option-d .select-pill select {
+  font-size: 10px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog)
+  .option-d
+  .length-control
+  button,
+:is(.artifact-hero, .review-bar, .concept-dialog).option-d
+  .length-control
+  button {
+  font-size: 10px;
+  padding: 6px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .option-d .under-composer,
+:is(.artifact-hero, .review-bar, .concept-dialog).option-d .under-composer {
+  font-size: 11px;
+}
+/* Landing context uses Home.astro's order, rhythm, hierarchy and card language. */
+:is(.artifact-hero, .review-bar, .concept-dialog) dialog,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(dialog) {
+  width: min(470px, calc(100% - 40px));
+  max-height: calc(100vh - 40px);
+  overflow: auto;
+  margin: auto;
+  padding: 30px;
+  background: var(--warm);
+  border: 2px solid var(--ink);
+  border-radius: 18px;
+  box-shadow: 5px 6px 0 var(--ink);
+  color: var(--ink);
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) dialog::backdrop,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(dialog)::backdrop {
+  background: #1e1e285d;
+  backdrop-filter: blur(2px);
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) dialog h2,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(dialog) h2 {
+  font-size: 25px;
+  margin-top: 22px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) dialog p,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(dialog) p {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 14px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) dialog > .btn,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(dialog) > .btn,
+:is(.artifact-hero, .review-bar, .concept-dialog) dialog > form > .btn,
+:is(.artifact-hero, .review-bar, .concept-dialog):is(dialog) > form > .btn {
+  width: 100%;
+  margin-top: 24px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .dialog-close,
+:is(.artifact-hero, .review-bar, .concept-dialog).dialog-close {
+  float: right;
+  min-width: 36px;
+  min-height: 36px;
+  border: 1px solid #c9c2b9;
+  border-radius: 8px;
+  background: var(--paper);
+  font-size: 23px;
+  line-height: 1;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .sample-doc,
+:is(.artifact-hero, .review-bar, .concept-dialog).sample-doc {
+  padding: 16px;
+  border: 1px solid #cdc5b9;
+  background: var(--paper);
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 13px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .sample-doc p,
+:is(.artifact-hero, .review-bar, .concept-dialog).sample-doc p {
+  font-size: 12px;
+}
+@media (min-width: 1280px) {
+  :is(.artifact-hero, .review-bar, .concept-dialog) .option-a .hero-work,
+  :is(.artifact-hero, .review-bar, .concept-dialog).option-a .hero-work {
+    padding-left: 0;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .option-a .composer,
+  :is(.artifact-hero, .review-bar, .concept-dialog).option-a .composer {
+    border-width: 2.5px;
+    box-shadow: 5px 6px 0 var(--ink);
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .option-a .inputrow,
+  :is(.artifact-hero, .review-bar, .concept-dialog).option-a .inputrow {
+    min-height: 162px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .option-a .pills,
+  :is(.artifact-hero, .review-bar, .concept-dialog).option-a .pills {
+    gap: 9px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .option-a .pill,
+  :is(.artifact-hero, .review-bar, .concept-dialog).option-a .pill,
+  :is(.artifact-hero, .review-bar, .concept-dialog)
+    .option-a
+    .select-pill
+    select,
+  :is(.artifact-hero, .review-bar, .concept-dialog).option-a
+    .select-pill
+    select {
+    font-size: 12px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog)
+    .option-a
+    .length-control
+    button,
+  :is(.artifact-hero, .review-bar, .concept-dialog).option-a
+    .length-control
+    button {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1100px) {
+  :is(.artifact-hero, .review-bar, .concept-dialog) .review-row,
+  :is(.artifact-hero, .review-bar, .concept-dialog).review-row {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .review-tabs,
+  :is(.artifact-hero, .review-bar, .concept-dialog).review-tabs {
+    flex: auto;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .review-summary,
+  :is(.artifact-hero, .review-bar, .concept-dialog).review-summary {
+    gap: 14px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .review-summary > div,
+  :is(.artifact-hero, .review-bar, .concept-dialog).review-summary > div {
+    display: block;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .review-summary dt,
+  :is(.artifact-hero, .review-bar, .concept-dialog).review-summary dt {
+    margin-bottom: 3px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .hero-panel,
+  :is(.artifact-hero, .review-bar, .concept-dialog).hero-panel {
+    gap: 30px;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .hero,
+  :is(.artifact-hero, .review-bar, .concept-dialog).hero {
+    padding-top: 48px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .inputrow,
+  :is(.artifact-hero, .review-bar, .concept-dialog).inputrow {
+    display: block;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .inputrow textarea,
+  :is(.artifact-hero, .review-bar, .concept-dialog).inputrow textarea {
+    min-height: 90px;
+    height: 90px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .send,
+  :is(.artifact-hero, .review-bar, .concept-dialog).send {
+    width: 100%;
+    margin-top: 8px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .option-b .send,
+  :is(.artifact-hero, .review-bar, .concept-dialog).option-b .send {
+    width: auto;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .example-caption,
+  :is(.artifact-hero, .review-bar, .concept-dialog).example-caption {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+}
+@media (max-width: 850px) {
+  :is(.artifact-hero, .review-bar, .concept-dialog) .review-wrap,
+  :is(.artifact-hero, .review-bar, .concept-dialog).review-wrap {
+    padding: 15px 20px 12px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .review-safety,
+  :is(.artifact-hero, .review-bar, .concept-dialog).review-safety {
+    font-size: 10px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .review-row,
+  :is(.artifact-hero, .review-bar, .concept-dialog).review-row {
+    display: block;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .review-tabs,
+  :is(.artifact-hero, .review-bar, .concept-dialog).review-tabs {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .review-tabs button,
+  :is(.artifact-hero, .review-bar, .concept-dialog).review-tabs button {
+    font-size: 10px;
+    padding: 9px 8px;
+    gap: 5px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .review-states,
+  :is(.artifact-hero, .review-bar, .concept-dialog).review-states {
+    margin-top: 10px;
+    justify-content: flex-start;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .review-summary,
+  :is(.artifact-hero, .review-bar, .concept-dialog).review-summary {
+    font-size: 10px;
+    gap: 15px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .review-state-note,
+  :is(.artifact-hero, .review-bar, .concept-dialog).review-state-note {
+    font-size: 9px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .hero-panel,
+  :is(.artifact-hero, .review-bar, .concept-dialog).hero-panel {
+    gap: 30px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .hero-copy .lead,
+  :is(.artifact-hero, .review-bar, .concept-dialog).hero-copy .lead {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .hero-copy .quiet-link,
+  :is(.artifact-hero, .review-bar, .concept-dialog).hero-copy .quiet-link {
+    font-size: 12px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .annotation,
+  :is(.artifact-hero, .review-bar, .concept-dialog).annotation {
+    font-size: 24px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .hero h1,
+  :is(.artifact-hero, .review-bar, .concept-dialog).hero h1 {
+    font-size: 34px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .option-d,
+  :is(.artifact-hero, .review-bar, .concept-dialog).option-d {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .option-d .hero-copy .lead,
+  :is(.artifact-hero, .review-bar, .concept-dialog).option-d .hero-copy .lead {
+    font-size: 15px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .example-choices,
+  :is(.artifact-hero, .review-bar, .concept-dialog).example-choices {
+    gap: 6px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog)
+    .example-choices
+    button
+    > span,
+  :is(.artifact-hero, .review-bar, .concept-dialog).example-choices
+    button
+    > span {
+    font-size: 8px;
+    padding: 6px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .example-choices svg,
+  :is(.artifact-hero, .review-bar, .concept-dialog).example-choices svg {
+    display: none;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .option-c,
+  :is(.artifact-hero, .review-bar, .concept-dialog).option-c {
+    gap: 28px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .guide-path,
+  :is(.artifact-hero, .review-bar, .concept-dialog).guide-path {
+    gap: 10px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .path-step,
+  :is(.artifact-hero, .review-bar, .concept-dialog).path-step {
+    font-size: 11px;
+  }
+}
+@media (max-width: 650px) {
+  :is(.artifact-hero, .review-bar, .concept-dialog) .review-top,
+  :is(.artifact-hero, .review-bar, .concept-dialog).review-top {
+    align-items: flex-start;
+    gap: 12px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .review-safety,
+  :is(.artifact-hero, .review-bar, .concept-dialog).review-safety {
+    max-width: 145px;
+    font-size: 9px;
+    line-height: 1.5;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) #review-title,
+  :is(.artifact-hero, .review-bar, .concept-dialog)#review-title {
+    font-size: 14px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .review-kicker,
+  :is(.artifact-hero, .review-bar, .concept-dialog).review-kicker {
+    font-size: 8px;
+    max-width: 160px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .review-top,
+  :is(.artifact-hero, .review-bar, .concept-dialog).review-top {
+    margin-bottom: 13px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .review-tabs button,
+  :is(.artifact-hero, .review-bar, .concept-dialog).review-tabs button {
+    display: grid;
+    justify-items: start;
+    gap: 3px;
+    text-align: left;
+    font-size: 9px;
+    line-height: 1.3;
+    padding: 8px;
+    min-height: 55px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .review-tabs b,
+  :is(.artifact-hero, .review-bar, .concept-dialog).review-tabs b {
+    font-size: 12px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .review-states > span,
+  :is(.artifact-hero, .review-bar, .concept-dialog).review-states > span {
+    font-size: 9px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .review-states button,
+  :is(.artifact-hero, .review-bar, .concept-dialog).review-states button {
+    font-size: 10px;
+    padding: 6px 8px;
+    min-height: 34px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .review-summary,
+  :is(.artifact-hero, .review-bar, .concept-dialog).review-summary {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    margin-top: 10px;
+    padding-top: 8px;
+    font-size: 9px;
+    line-height: 1.4;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .review-summary > div,
+  :is(.artifact-hero, .review-bar, .concept-dialog).review-summary > div {
+    display: flex;
+    gap: 6px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .review-summary dt,
+  :is(.artifact-hero, .review-bar, .concept-dialog).review-summary dt {
+    width: 49px;
+    flex: none;
+    margin: 0;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .review-state-note,
+  :is(.artifact-hero, .review-bar, .concept-dialog).review-state-note {
+    margin-top: 8px;
+    font-size: 9px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .hero,
+  :is(.artifact-hero, .review-bar, .concept-dialog).hero {
+    padding-block: 36px 26px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .hero-panel,
+  :is(.artifact-hero, .review-bar, .concept-dialog).hero-panel,
+  :is(.artifact-hero, .review-bar, .concept-dialog) .option-c,
+  :is(.artifact-hero, .review-bar, .concept-dialog).option-c,
+  :is(.artifact-hero, .review-bar, .concept-dialog) .option-d,
+  :is(.artifact-hero, .review-bar, .concept-dialog).option-d {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px;
+    min-height: 0;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .hero h1,
+  :is(.artifact-hero, .review-bar, .concept-dialog).hero h1 {
+    font-size: 34px;
+    letter-spacing: -0.045em;
+    line-height: 1.15;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .hero-copy .eyebrow,
+  :is(.artifact-hero, .review-bar, .concept-dialog).hero-copy .eyebrow {
+    margin-bottom: 13px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .hero-copy .lead,
+  :is(.artifact-hero, .review-bar, .concept-dialog).hero-copy .lead {
+    margin-top: 22px;
+    font-size: 15px;
+    max-width: 37ch;
+    line-height: 1.65;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .quiet-link,
+  :is(.artifact-hero, .review-bar, .concept-dialog).quiet-link {
+    margin-top: 18px !important;
+    font-size: 12px !important;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .annotation,
+  :is(.artifact-hero, .review-bar, .concept-dialog).annotation {
+    font-size: 25px;
+    margin: 0 0 13px 13px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .composer-label,
+  :is(.artifact-hero, .review-bar, .concept-dialog).composer-label {
+    padding: 14px 15px 0;
+    font-size: 15px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .composer-label .tiny,
+  :is(.artifact-hero, .review-bar, .concept-dialog).composer-label .tiny {
+    font-size: 9px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .inputrow,
+  :is(.artifact-hero, .review-bar, .concept-dialog).inputrow {
+    padding: 9px 14px 14px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .inputrow textarea,
+  :is(.artifact-hero, .review-bar, .concept-dialog).inputrow textarea {
+    font-size: 15px;
+    height: 91px;
+    min-height: 91px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .send,
+  :is(.artifact-hero, .review-bar, .concept-dialog).send {
+    font-size: 15px;
+    min-height: 44px;
+    padding: 11px 15px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .pills,
+  :is(.artifact-hero, .review-bar, .concept-dialog).pills {
+    padding: 10px 12px 12px;
+    gap: 7px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .pill,
+  :is(.artifact-hero, .review-bar, .concept-dialog).pill {
+    font-size: 10px;
+    padding: 7px 8px;
+    min-height: 35px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .select-pill select,
+  :is(.artifact-hero, .review-bar, .concept-dialog).select-pill select {
+    font-size: 10px;
+    min-height: 35px;
+    padding: 8px 4px 8px 8px;
+    max-width: 142px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .length-control button,
+  :is(.artifact-hero, .review-bar, .concept-dialog).length-control button {
+    font-size: 10px;
+    padding: 6px 8px;
+    min-height: 28px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .under-composer,
+  :is(.artifact-hero, .review-bar, .concept-dialog).under-composer {
+    font-size: 10px;
+    margin-top: 15px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .option-b .hero-intro,
+  :is(.artifact-hero, .review-bar, .concept-dialog).option-b .hero-intro {
+    text-align: left;
+    margin: 0 0 28px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .option-b .hero-intro h1 br,
+  :is(.artifact-hero, .review-bar, .concept-dialog).option-b .hero-intro h1 br {
+    display: block;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .option-b .hero-intro .lead,
+  :is(.artifact-hero, .review-bar, .concept-dialog).option-b .hero-intro .lead {
+    font-size: 15px;
+    line-height: 1.65;
+    margin-top: 22px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .option-b .split-studio,
+  :is(.artifact-hero, .review-bar, .concept-dialog).option-b .split-studio {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .split-studio .send,
+  :is(.artifact-hero, .review-bar, .concept-dialog).split-studio .send {
+    float: none;
+    width: 100%;
+    margin: 8px 0 0;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog)
+    .split-studio
+    .inputrow
+    textarea,
+  :is(.artifact-hero, .review-bar, .concept-dialog).split-studio
+    .inputrow
+    textarea {
+    height: 90px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .preview-example > img,
+  :is(.artifact-hero, .review-bar, .concept-dialog).preview-example > img {
+    aspect-ratio: 16/8.5;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .example-caption,
+  :is(.artifact-hero, .review-bar, .concept-dialog).example-caption {
+    font-size: 13px;
+    gap: 6px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .example-caption > .tiny,
+  :is(.artifact-hero, .review-bar, .concept-dialog).example-caption > .tiny {
+    font-size: 9px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .example-top,
+  :is(.artifact-hero, .review-bar, .concept-dialog).example-top {
+    padding: 10px 13px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .example-top > .tiny,
+  :is(.artifact-hero, .review-bar, .concept-dialog).example-top > .tiny {
+    font-size: 10px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .option-c .hero-work,
+  :is(.artifact-hero, .review-bar, .concept-dialog).option-c .hero-work {
+    margin-top: -4px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .guide-path,
+  :is(.artifact-hero, .review-bar, .concept-dialog).guide-path {
+    margin-top: 22px;
+    gap: 9px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .path-step,
+  :is(.artifact-hero, .review-bar, .concept-dialog).path-step {
+    font-size: 12px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .path-step b,
+  :is(.artifact-hero, .review-bar, .concept-dialog).path-step b {
+    width: 23px;
+    height: 23px;
+    font-size: 11px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .topic-examples,
+  :is(.artifact-hero, .review-bar, .concept-dialog).topic-examples {
+    gap: 5px;
+    margin-bottom: 14px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .topic-examples button,
+  :is(.artifact-hero, .review-bar, .concept-dialog).topic-examples button {
+    font-size: 9px;
+    padding: 6px 8px;
+    min-height: 30px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .topic-examples > span,
+  :is(.artifact-hero, .review-bar, .concept-dialog).topic-examples > span {
+    font-size: 10px;
+    margin-bottom: 2px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .guided-fields,
+  :is(.artifact-hero, .review-bar, .concept-dialog).guided-fields {
+    padding: 0 15px 14px;
+    gap: 12px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .guided-fields label,
+  :is(.artifact-hero, .review-bar, .concept-dialog).guided-fields label {
+    font-size: 10px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .guided-fields select,
+  :is(.artifact-hero, .review-bar, .concept-dialog).guided-fields select,
+  :is(.artifact-hero, .review-bar, .concept-dialog) .guided-fields input,
+  :is(.artifact-hero, .review-bar, .concept-dialog).guided-fields input {
+    font-size: 11px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog)
+    .option-c
+    .inputrow
+    textarea,
+  :is(.artifact-hero, .review-bar, .concept-dialog).option-c
+    .inputrow
+    textarea {
+    height: 78px;
+    min-height: 78px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .option-c .pills,
+  :is(.artifact-hero, .review-bar, .concept-dialog).option-c .pills {
+    gap: 7px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .option-d .hero-copy .lead,
+  :is(.artifact-hero, .review-bar, .concept-dialog).option-d .hero-copy .lead {
+    font-size: 15px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .example-prompt-label,
+  :is(.artifact-hero, .review-bar, .concept-dialog).example-prompt-label {
+    font-size: 10px;
+    margin-top: 23px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .example-choices,
+  :is(.artifact-hero, .review-bar, .concept-dialog).example-choices {
+    gap: 9px;
+    margin-top: 9px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog)
+    .example-choices
+    button
+    > span,
+  :is(.artifact-hero, .review-bar, .concept-dialog).example-choices
+    button
+    > span {
+    font-size: 8px;
+    min-height: 38px;
+    padding: 7px 5px;
+    line-height: 1.4;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .example-choices img,
+  :is(.artifact-hero, .review-bar, .concept-dialog).example-choices img {
+    aspect-ratio: 16/10;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .remix-heading,
+  :is(.artifact-hero, .review-bar, .concept-dialog).remix-heading {
+    margin: 0 0 13px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .remix-heading .annotation,
+  :is(.artifact-hero, .review-bar, .concept-dialog).remix-heading .annotation {
+    margin-left: 12px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .remix-heading > p,
+  :is(.artifact-hero, .review-bar, .concept-dialog).remix-heading > p {
+    margin-left: 14px;
+    font-size: 16px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .option-d .pills,
+  :is(.artifact-hero, .review-bar, .concept-dialog).option-d .pills {
+    gap: 7px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog)
+    .option-d
+    .length-control
+    button,
+  :is(.artifact-hero, .review-bar, .concept-dialog).option-d
+    .length-control
+    button {
+    padding: 6px 8px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .option-d .under-composer,
+  :is(.artifact-hero, .review-bar, .concept-dialog).option-d .under-composer {
+    font-size: 10px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .job-head,
+  :is(.artifact-hero, .review-bar, .concept-dialog).job-head {
+    padding: 12px;
+    gap: 7px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .job-head h2,
+  :is(.artifact-hero, .review-bar, .concept-dialog).job-head h2 {
+    font-size: 12px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .job-head .tiny,
+  :is(.artifact-hero, .review-bar, .concept-dialog).job-head .tiny {
+    font-size: 9px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .job-body,
+  :is(.artifact-hero, .review-bar, .concept-dialog).job-body {
+    padding: 15px 16px 18px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .prompt-receipt,
+  :is(.artifact-hero, .review-bar, .concept-dialog).prompt-receipt {
+    font-size: 13px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .job-settings,
+  :is(.artifact-hero, .review-bar, .concept-dialog).job-settings {
+    font-size: 10px;
+    margin: 6px 0 15px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .gen-steps li,
+  :is(.artifact-hero, .review-bar, .concept-dialog).gen-steps li {
+    font-size: 11px;
+    padding: 7px 0;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .simulation-note,
+  :is(.artifact-hero, .review-bar, .concept-dialog).simulation-note {
+    font-size: 9px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .locked-board,
+  :is(.artifact-hero, .review-bar, .concept-dialog).locked-board {
+    min-height: 165px;
+    padding: 22px 14px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .locked-body,
+  :is(.artifact-hero, .review-bar, .concept-dialog).locked-body {
+    padding: 20px 16px 15px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .locked-body h2,
+  :is(.artifact-hero, .review-bar, .concept-dialog).locked-body h2 {
+    font-size: 21px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .locked-body > .btn,
+  :is(.artifact-hero, .review-bar, .concept-dialog).locked-body > .btn {
+    font-size: 12px;
+    gap: 6px;
+    min-height: 44px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .locked-body > .btn svg,
+  :is(.artifact-hero, .review-bar, .concept-dialog).locked-body > .btn svg {
+    width: 17px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog)
+    .locked-body
+    > p:not(.login-line):not(.account-note):not(.account-feedback),
+  :is(.artifact-hero, .review-bar, .concept-dialog).locked-body
+    > p:not(.login-line):not(.account-note):not(.account-feedback) {
+    font-size: 11px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .login-line,
+  :is(.artifact-hero, .review-bar, .concept-dialog).login-line {
+    font-size: 10px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .login-line .text-button,
+  :is(.artifact-hero, .review-bar, .concept-dialog).login-line .text-button {
+    font-size: 10px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .account-note,
+  :is(.artifact-hero, .review-bar, .concept-dialog).account-note {
+    font-size: 9px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .board-doodles,
+  :is(.artifact-hero, .review-bar, .concept-dialog).board-doodles {
+    font-size: 20px;
+    inset: 28px 12px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .board-doodles span,
+  :is(.artifact-hero, .review-bar, .concept-dialog).board-doodles span {
+    padding: 9px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) h2,
+  :is(.artifact-hero, .review-bar, .concept-dialog):is(h2) {
+    font-size: 29px;
+    line-height: 1.16;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .eyebrow,
+  :is(.artifact-hero, .review-bar, .concept-dialog).eyebrow {
+    font-size: 10px;
+    margin-bottom: 13px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) dialog,
+  :is(.artifact-hero, .review-bar, .concept-dialog):is(dialog) {
+    padding: 24px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) dialog h2,
+  :is(.artifact-hero, .review-bar, .concept-dialog):is(dialog) h2 {
+    font-size: 24px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) dialog p,
+  :is(.artifact-hero, .review-bar, .concept-dialog):is(dialog) p {
+    font-size: 12px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .sample-doc p,
+  :is(.artifact-hero, .review-bar, .concept-dialog).sample-doc p {
+    font-size: 11px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) dialog .btn,
+  :is(.artifact-hero, .review-bar, .concept-dialog):is(dialog) .btn {
+    font-size: 13px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  :is(.artifact-hero, .review-bar, .concept-dialog) *,
+  :is(.artifact-hero, .review-bar, .concept-dialog):is(*),
+  :is(.artifact-hero, .review-bar, .concept-dialog) *:before,
+  :is(.artifact-hero, .review-bar, .concept-dialog):is(*):before,
+  :is(.artifact-hero, .review-bar, .concept-dialog) *:after,
+  :is(.artifact-hero, .review-bar, .concept-dialog):is(*):after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .guided-submit,
+:is(.artifact-hero, .review-bar, .concept-dialog).guided-submit {
+  padding: 0 18px 18px;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .guided-submit .send,
+:is(.artifact-hero, .review-bar, .concept-dialog).guided-submit .send {
+  margin-top: 0;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .option-c .pills,
+:is(.artifact-hero, .review-bar, .concept-dialog).option-c .pills {
+  border-bottom: 0;
+}
+:is(.artifact-hero, .review-bar, .concept-dialog) .option-c .inputrow,
+:is(.artifact-hero, .review-bar, .concept-dialog).option-c .inputrow {
+  padding-bottom: 8px;
+}
+@media (max-width: 650px) {
+  :is(.artifact-hero, .review-bar, .concept-dialog) .guided-submit,
+  :is(.artifact-hero, .review-bar, .concept-dialog).guided-submit {
+    padding: 0 14px 14px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .review-summary,
+  :is(.artifact-hero, .review-bar, .concept-dialog).review-summary {
+    font-size: 10px;
+  }
+  :is(.artifact-hero, .review-bar, .concept-dialog) .review-state-note,
+  :is(.artifact-hero, .review-bar, .concept-dialog).review-state-note {
+    font-size: 10px;
+  }
+}

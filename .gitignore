@@ -1,0 +1,18 @@
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Temporary and local validation output
+*.tmp
+*.log
+screenshots/
+validation-results.json
+playwright-report/
+test-results/

@@ -1,0 +1,107 @@
+/* Artifact-only support. Source landing styles remain in styles.css. */
+[hidden] {
+  display: none !important;
+}
+:where(.artifact-hero, .review-bar, .concept-dialog) {
+  --shadow: 3px 4px 0 var(--ink);
+}
+.review-bar {
+  color: #1e1e28;
+  --ink: #1e1e28;
+  --paper: #fff;
+  --violet-deep: #5a4bd1;
+  --marker: "Shantell Sans Variable";
+  --ui: "Inter Variable";
+}
+.review-bar p {
+  margin: 0;
+}
+.artifact-hero .wrap {
+  padding-inline: var(--home-pad);
+}
+.artifact-hero {
+  --sk-paper: var(--paper);
+}
+.artifact-hero .home-proof {
+  font: 400 var(--home-body)/1.62 var(--ui);
+}
+.artifact-hero .home-proof b {
+  font-size: 1.75rem;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+}
+.artifact-hero .home-proof-icon {
+  height: 46px;
+  width: 46px;
+}
+.artifact-hero .home-proof-icon svg {
+  height: 100%;
+  width: 100%;
+}
+.artifact-hero .home-proof-item span {
+  font-size: var(--home-small);
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.skip {
+  position: fixed;
+  top: 8px;
+  left: 12px;
+  z-index: 200;
+  transform: translateY(-150%);
+  padding: 12px;
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  border-radius: 10px;
+}
+.skip:focus {
+  transform: none;
+}
+.concept-dialog {
+  color: var(--ink);
+}
+.concept-dialog button {
+  font: inherit;
+  cursor: pointer;
+}
+.concept-dialog form {
+  margin: 0;
+}
+html[data-theme="night"] .artifact-hero .btn.primary,
+html[data-theme="night"] .artifact-hero .send {
+  color: var(--on-accent);
+}
+html[data-theme="night"] .artifact-hero.dotted:before {
+  background-image: radial-gradient(
+    circle,
+    var(--dot) 1.2px,
+    transparent 1.2px
+  );
+}
+html[data-theme="night"] .artifact-hero .composer-card,
+html[data-theme="night"] .artifact-hero .locked-card,
+html[data-theme="night"] .artifact-hero .card {
+  background: var(--paper);
+  border-color: var(--line);
+  box-shadow: 3px 4px 0 rgba(155, 140, 255, 0.26);
+}
+
+/* Production section bands must not add padding inside preserved hero states. */
+.artifact-hero section {
+  padding: 0;
+}
+
+@media (min-width: 901px) and (max-width: 980px) {
+  .nav-in {
+    padding-inline: 18px;
+  }
+}
